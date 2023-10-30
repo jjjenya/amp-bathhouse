@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html ⚡4email data-css-strict>
+
+<head>
+  <meta charset="utf-8" />
+  <style amp4email-boilerplate>
+    body {
+      visibility: hidden;
+    }
+  </style>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"> </script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
+
+  <style amp-custom>
+    /* *{outline: 1px red solid; outline-offset: -1px;} */
+  
+    body {
+      width: auto;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+  
+    td {
+      font-size: 0;
+      line-height: 0;
+      border: none;
+      border-width: -1px 0 0 -1px;
+    }
+  
+    .window-wrap {
+      width: 100%;
+      background-color: #ffffff;
+    }
+  
+    .mail-wrap {
+      background-color: #ffffff;
+      margin: 0 auto;
+      max-width: 600px;
+      width: 100%;
+    }
+  
+    .mail-wrap p {
+      padding: 0.5em;
+      margin: 0.5em;
+      color: #333333;
+      font-family: arial, 'helvetica neue', helvetica, sans-serif;
+    }
+  
+    .web-version {
+      background-color: #f7f7f7;
+      width: 100%;
+      text-align: center;
+      height: 34px;
+      vertical-align: middle;
+    }
+  
+    .mail-wrap {
+      font-family: arial, 'helvetica neue', helvetica, sans-serif;
+    }
+  
+    .web-version a {
+      display: block;
+      padding-top: 9px;
+      background-color: #f7f7f7;
+      width: 100%;
+      text-align: center;
+      color: #adafb2;
+      font-size: 12px;
+    }  
+    .logo-block .logo{
+      max-width: 600px;
+      width: 100%;
+    }  
+    .nav{
+      background-color: #839fd2;
+  
+    }
+  
+    .nav ul {
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      margin-bottom: 0;
+    }
+  
+    .nav ul li {
+      padding-top: 5px;
+      padding-bottom: 8px;
+      list-style: none;
+      min-width: 80px;
+      margin: 0 auto;
+      width: 20%;
+      text-align: center;
+    }
+  
+    .nav li a {
+      white-space: nowrap;
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 13px;
+    }
+  
+    .insta-block {
+      margin: 0 auto;
+      width: 95%;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      border: 1px solid #1f51f8;
+    }
+  
+    .insta-block .insta-photos {
+      margin: 0 auto;
+      max-width: 534px;
+      width: 100%;
+    }
+  
+    .insta-block .insta-logo {
+      background: #ffffff;
+      background-image: linear-gradient(#fff, #fff);
+      position: relative;
+      bottom: 15px;
+      background-color: #ffffff;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 0 auto;
+      padding-bottom: 10px;
+      max-width: 134px;
+      width: 100%;
+    }
+  
+    .insta-block .social {
+      justify-content: space-between;
+      display: flex;
+      max-width: 230px;
+      margin: 0 auto;
+      padding-right: 0px;
+      padding-top: 20px;
+    }
+  
+    .insta-block .icon {
+      width: 32px;
+      padding: 0 5px;
+    }
+  
+    .insta-block .icon:last-child {
+      width: 32px;
+      padding-left: 5px;
+    }
+  
+    .button-block {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 203px;
+      width: 100%;
+      position: relative;
+      top: 17px;
+      background-color: #839fd2;
+    }
+  
+    .button-block .subscribe-button {
+      padding: 10px 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .advantages-block-title {
+      background-image: url("https://email-images.mindbox.ru/639123/4339378/7.png");
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 40px;
+    }
+  
+    .advantages-block-title .advantages-text {
+      padding: 25px 0 30px 0;
+      font-size: 17px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 20px;
+      text-transform: uppercase;
+      font-weight: bold;
+      max-width: 245px;
+      width: 100%;
+    }
+  
+    .avantages {
+      width: 100%;
+    }
+  
+    .advantages .advantages-list {
+      margin-top: 35px;
+      min-width: 250px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  
+    .advantages .advantages-list .advantages-list-item {
+      width: 25%;
+      text-align: center;
+    }
+  
+    .advantages-list .advantages-list-item .icon {
+      margin: 0 auto;
+      width: 50px;
+      text-align: center;
+    }
+  
+    .advantages-list .advantage-text {
+      font-size: 11px;
+      font-weight: bold;
+      line-height: 17px;
+    }
+  
+    .pharma_link-block {
+      max-width: 260px;
+      width: 100%;
+      padding-top: 30px;
+      margin: 0 auto;
+    }
+  
+    .pharma_link-block .pharma_link {
+      color: #0068a5;
+      font-weight: bold;
+      font-size: 21px;
+      text-align: center;
+      max-width: 260px;
+      width: 45%;
+      margin: 0 auto;
+    }
+  
+    .app-bnr {
+      background-image: url("https://email-images.mindbox.ru/639123/4339378/13.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      width: 100%;
+    }
+  
+    .app-bnr_wrapp {
+      margin: 0 auto;
+      max-width: 290px;
+      width: 100%;
+    }
+  
+    .app-bnr_text {
+      line-height: 24px;
+      font-size: 17px;
+      margin-top: 0;
+      margin: 0 auto;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      max-width: 290px;
+      width: 100%;
+      font-size: 21px;
+    }
+  
+    .app-bnr p {
+      margin-top: 0;
+      padding-top: 95px;
+    }
+  
+    .app-bnr_icons {
+      display: flex;
+      max-width: 290px;
+      width: 100%;
+      padding-bottom: 95px;
+      justify-content: space-around;
+    }
+  
+    .app-bnr_icon {
+      width: 36%;
+    }
+  
+    .footer {
+      background-color: #f7f7f7;
+      text-align: center;
+    }
+  
+    .footer .footer-text {
+      color: #000000;
+      margin: 0 auto;
+      font-size: 10px;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  
+    .footer .footer-text a {
+      color: #989898;
+      text-decoration: underline;
+    }
+  
+    .footer .footer-text1 {
+      max-width: 400px;
+    }
+  
+    .footer .footer-text2 {
+      max-width: 500px;
+    }
+  
+    .footer .footer-text3 {
+      max-width: 270px;
+    }
+  
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      /* clip: rect(0 0 0 0); */
+      opacity: 0;
+      overflow: hidden;
+    }
+  
+    table,
+    td,
+    div,
+    amp-carousel {
+      /* box-sizing: border-box; */
+      border-spacing: 0;
+      padding: 0;
+    }
+  
+    table {
+      border-collapse: collapse;
+    }
+  
+    td {
+      font-size: 0;
+      line-height: 0;
+    }
+  
+    .amp-carousel-button {
+      top: 50%;
+      height: 80px;
+      width: 200px;
+    }
+  
+  
+    .amp-mode-mouse .amp-carousel-button,
+    amp-carousel .amp-carousel-button,
+    amp-carousel[controls] .amp-carousel-button {
+      opacity: 0;
+      visibility: visible;
+    }
+  
+    .amp-carousel-button:focus {
+      border: none;
+      outline: none;
+    }
+  
+    .amp-carousel-button-next {
+      right: 50%;
+      background-image: none;
+      width: 50%;
+      height: 100%;
+    }
+  
+    .amp-carousel-button-prev {
+      left: 50%;
+      background-image: none;
+      width: 50%;
+      height: 100%;
+    }
+
+
+    @media (max-width: 600px) {
+      .email-body {
+        background-color: #ffffff;
+      }
+  
+      .nav ul li {
+        min-width: 60px;
+      }
+  
+      .advantages-list p {
+        font-size: 10px;
+        line-height: 13px;
+      }
+  
+      .pharma_link-block {
+        width: 220px;
+      }
+  
+      .pharma_link-block .pharma_link {
+        font-size: 18px;
+        margin: 0 auto;
+        text-align: center;
+      }
+  
+      .advantages-block-title .advantages-text {
+        font-size: 15px;
+      }
+  
+      .footer .footer-text {
+        font-size: 9px;
+      }
+  
+      .app-bnr_text {
+        font-size: 16px;
+      }
+    }
+  
+    @media (max-width: 450px) {
+      .nav ul li a {
+        font-size: 11px;
+      }
+  
+      .advantages-list p {
+        font-size: 8px;
+        line-height: 11px;
+      }
+  
+      .pharma_link-block {
+        width: 200px;
+      }
+  
+      .pharma_link-block .pharma_link {
+        font-size: 16px;
+        margin: 0 auto;
+      }
+  
+      .advantages-block-title .advantages-text {
+        font-size: 14px;
+      }
+  
+      .footer .footer-text {
+        font-size: 8px;
+      }
+  
+      .app-bnr_text {
+        font-size: 15px;
+      }
+    }
+  
+    @media (max-width: 370px) {
+      .nav ul li a {
+        font-size: 9px;
+      }
+  
+      .advantages-list p {
+        font-size: 7px;
+        line-height: 9px;
+      }
+  
+      .pharma_link-block {
+        width: 175px;
+      }
+  
+      .pharma_link-block .pharma_link {
+        font-size: 14px;
+        margin: 0 auto;
+      }
+  
+      .advantages-block-title .advantage-text {
+        font-size: 13px;
+      }
+  
+      .footer .footer-text {
+        font-size: 7px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="window-wrap">
+    <div class="mail-wrap">
+      <!-- Header -->
+      <div class="header">
+        <!-- link-web -->
+        <div class="web-version">
+          <a href="${Message.AccessibilityLink}" target="_blank">Ссылка на веб-версию</a>
+        </div>
+        <!-- /link-web -->
+        <!-- logo -->
+        <div class="logo-block">
+          <a href="https://www.pharmacosmetica.ru/" target="_blank">
+            <amp-img class="logo" src="https://email-images.mindbox.ru/615839/4203595/9.png" layout="responsive" width="600" height="61" style="max-width: 600px; width: 100%;"></amp-img>
+          </a>
+        </div>
+        <!-- /logo -->
+        <!-- menu -->
+        <div class="nav">
+          <ul class="nav-list">
+            <li class="nav-item item5"><a href="https://www.pharmacosmetica.ru/podarki-dlya-vas/" target="_blank">АКЦИИ</a></li>
+            <li class="nav-item item5"><a href="https://www.pharmacosmetica.ru/eshop/uxod-za-litsom/" target="_blank">ДЛЯ ЛИЦА</a></li>
+            <li class="nav-item item5"><a href="https://www.pharmacosmetica.ru/eshop/uxod-za-telom/" target="_blank">ДЛЯ ТЕЛА</a></li>
+            <li class="nav-item item5"><a href="https://www.pharmacosmetica.ru/eshop/uxod-za-volosami/" target="_blank">ДЛЯ ВОЛОС</a></li>
+            <li class="nav-item item5"><a href="https://www.pharmacosmetica.ru/courier/" target="_blank">ДОСТАВКА</a></li>
+          </ul>
+        </div>
+        <!-- /menu -->
+      </div>
+      <!-- /Header -->
+      <!-- Promo -->
+      <div class="email-body">                
+        <div class="footer bg-promo"  style=" background-image: url(&quot;https://email-images.mindbox.ru/639123/4339378/48.jpg&quot;); background-repeat:no-repeat; background-size:contain; background-position:center; ">
+          <!-- row-1 -->
+          <table cellpadding="0" cellspacing="0" width="100%">                    
+            <tr>
+              <td align="center" width="100%"  style="font-size: 0; line-height: 0;">                                                 
+                <amp-img [class]="(selectedSlide1 == 1 &&  selectedSlide2 == 1 &&  selectedSlide3 == 4  &&  selectedSlide4 == 3 ) ? '' : 'visually-hidden'" class="visually-hidden"
+                src="https://email-images.mindbox.ru/639123/4339378/4.png" 
+                    width = "600" layout="responsive" 
+                    height = "196"> </amp-img>   
+                <amp-img [class]="(selectedSlide1 == 1 &&  selectedSlide2 == 1 &&  selectedSlide3 == 4  &&  selectedSlide4 == 3) ? 'visually-hidden' : ''" class=""
+                src="https://email-images.mindbox.ru/639123/4339378/6.png" 
+                    width = "600" layout="responsive" 
+                    height = "196"> </amp-img>   
+            </td>
+              </tr>
+          </table>
+          <!-- /row-1 -->
+          <!-- row-2-5 -->           
+          <table cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td align="center" width="100%"  style=" font-size: 0; line-height: 0;">   
+                <!-- row-2 -->                         
+                <table cellpadding="0" cellspacing="0"  width="100%" >
+                  <tr>
+                    <td width="442" height="auto" style="font-size: 0; line-height: 0;">                                                             
+                      <amp-img [class]="(selectedSlide1 == 1) ? '' : 'visually-hidden'" class="visually-hidden"
+                      src="https://email-images.mindbox.ru/639123/4339378/9.png" 
+                          width = "442" layout="responsive" 
+                          height = "94"> </amp-img> 
+                    </td>
+                    <td width="158"  height="auto" style="font-size: 0; line-height: 0;"> 
+                      <amp-carousel type="slides" layout="responsive" width="158" height="94" controls loop delay="3000"
+                      data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+                      aria-label="Looping carousel" [slide]="selectedSlide1" on="slideChange:AMP.setState({ selectedSlide1: event.index })">
+                      <div style="width:158px; height:94px;"></div>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/12.png" layout="responsive" width="158" height="94" alt="a sample image"></amp-img>                              
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/15.png" layout="responsive" width="158" height="94" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/14.png" layout="responsive" width="158" height="94" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/23.png" layout="responsive" width="158" height="94" alt="a sample image"></amp-img>
+                    </td>
+                  </tr>
+                </table>
+                <!-- /row-2 -->
+                <!-- row-3 -->
+                <table cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td width="442"  style="font-size: 0; line-height: 0;">                                                             
+                      <amp-img [class]="(selectedSlide2 == 1  ) ? '' : 'visually-hidden'" class="visually-hidden"
+                      src="https://email-images.mindbox.ru/639123/4339378/37.png" 
+                          width = "442" layout="responsive" 
+                          height = "100"> </amp-img>
+                    </td>
+                    <td width="158"  style="font-size: 0; line-height: 0;"> 
+                      <amp-carousel type="slides" layout="responsive"  width="158" height="100" controls loop delay="3000"
+                      data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+                      aria-label="Looping carousel" [slide]="selectedSlide2" on="slideChange:AMP.setState({ selectedSlide2: event.index })">
+                      <div style="width:158px; height:94px;"></div>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/11.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/26.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/22.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/8.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                    </td>
+                  </tr>
+                </table>
+                <!-- /row-3 -->
+                <!-- row-4 -->
+                <table cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td width="442"  style="font-size: 0; line-height: 0;">                                
+                      <amp-img [class]="(selectedSlide3 == 4  ) ? '' : 'visually-hidden'" class="visually-hidden"
+                      src="https://email-images.mindbox.ru/639123/4339378/21.png" 
+                          width = "442" layout="responsive" 
+                          height = "100"> </amp-img>   
+                    </td>
+                    <td width="158"  style="font-size: 0; line-height: 0;">
+                      <amp-carousel type="slides" layout="responsive" width="158" height="100" controls loop delay="3000"
+                      data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+                      aria-label="Looping carousel" [slide]="selectedSlide3" on="slideChange:AMP.setState({ selectedSlide3: event.index })">
+                      <div style="width:158px; height:94px;"></div>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/20.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/35.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/34.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/42.png" layout="responsive" width="158" height="100" alt="a sample image"></amp-img>
+                    </td>
+                  </tr>
+                </table>
+                <!-- /row-4 -->
+                <!-- row-5 -->
+                <table cellpadding="0" cellspacing="0" >
+                  <tr>
+                    <td width="442"  style="font-size: 0; line-height: 0;">           
+                      <amp-img [class]="(selectedSlide4 == 3  ) ? '' : 'visually-hidden'" class="visually-hidden"
+                      src="https://email-images.mindbox.ru/639123/4339378/29.png" 
+                          width = "442" layout="responsive" 
+                          height = "210"> </amp-img>  
+                    </td>
+                    <td width="158"  style="font-size: 0; line-height: 0; "> 
+                      <amp-carousel type="slides" layout="responsive" width="158" height="210" controls loop delay="3000"
+                      data-next-button-aria-label="Go to next slide" data-previous-button-aria-label="Go to previous slide" role="region"
+                      aria-label="Looping carousel" [slide]="selectedSlide4" on="slideChange:AMP.setState({ selectedSlide4: event.index })">
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/25.png"  layout="responsive" width="158" height="210" alt="a sample image"></amp-img>
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/3.png"    layout="responsive" width="158" height="210" alt="a sample image"></amp-img>                              
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/30.png"  layout="responsive" width="158" height="210" alt="a sample image"></amp-img>
+                      <!-- <amp-img src="https://email-images.mindbox.ru/639123/4339378/41.png"  layout="responsive" width="158" height="210" alt="a sample image"></amp-img> -->
+                      <amp-img src="https://email-images.mindbox.ru/639123/4339378/52.png"   class="visually-hidden" layout="responsive" width="158" height="210" alt="a sample image"></amp-img>
+                    </td>
+                  </tr>
+                </table>
+                <!-- /row-5 -->                     
+              </td>
+            </tr>                         
+          </table>
+          <!-- /row-2-5 --> 
+        </div>
+      </div>
+      <!-- /Promo -->
+                      
+                <!--баннер-->
+                <div class="bnr-block">
+                  <a href="https://www.pharmacosmetica.ru/" target="_blank">
+                      <amp-img class="bnr" src="https://email-images.mindbox.ru/639123/4339378/47.png" layout="responsive" width="1200" height="202" style="max-width: 600px; width: 100%;"></amp-img>
+                  </a>
+              </div>
+              <!--баннер-->
+              
+              <!--три баннера в ряд-->
+              <div style="width:100%; display: flex; padding-bottom: 0px;">
+                  <div style="width: 100%;">
+                      <a href="https://www.pharmacosmetica.ru/podarki-dlya-vas/novogodniy-festival-podarkov.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/44.png" layout="responsive" width="400" height="485"></amp-img>
+                      </a>
+                  </div>
+                  <div style="width:100%">
+                      <a href="https://www.pharmacosmetica.ru/podarki-dlya-vas/novogodniy-festival-podarkov.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/40.png" layout="responsive" width="400" height="485"></amp-img>
+                      </a>
+                  </div>
+                  <div style="width:100%">
+                      <a href="https://www.pharmacosmetica.ru/podarki-dlya-vas/novogodniy-festival-podarkov.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/2.png" layout="responsive" width="400" height="485"></amp-img>
+                      </a>
+                  </div>
+              </div>
+              <!--баннер-конец-->
+              
+              <!--баннер-->
+              <div class="bnr-block">
+                  <a href="https://www.pharmacosmetica.ru/" target="_blank">
+                      <amp-img class="bnr" src="https://email-images.mindbox.ru/639123/4339378/1.png" layout="responsive" width="1200" height="165" style="max-width: 600px; width: 100%;"></amp-img>
+                  </a>
+              </div>
+              <!--баннер-->
+
+              <!--три баннера в ряд-->
+              <div style="width:100%; display: flex; padding-bottom: 0px;">
+                  <div style="width: 100%;">
+                      <a href="https://www.pharmacosmetica.ru/eshop/cerave-smyagchayuschiy-ochischayuschiy-gel-236ml_id_362069.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/54.png" layout="responsive" width="400" height="886"></amp-img>
+                      </a>
+                  </div>
+                  <div style="width:100%">
+                      <a href="https://www.pharmacosmetica.ru/eshop/lrp-retinol-v3-syvorotka-30-ml_id_404219.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/39.png" layout="responsive" width="400" height="886"></amp-img>
+                      </a>
+                  </div>
+                  <div style="width:100%">
+                      <a href="https://www.pharmacosmetica.ru/eshop/133-bozhestvennoe-maslo-50-ml_id_15328.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/33.png" layout="responsive" width="400" height="886"></amp-img>
+                      </a>
+                  </div>
+              </div>
+              <!--баннер-конец-->
+              
+              
+              <!--три баннера в ряд-->
+              <div style="width:100%; display: flex; padding-bottom: 0px;">
+                  <div style="width: 100%;">
+                      <a href="https://www.pharmacosmetica.ru/eshop/uxod-za-litsom/sredstva-protiv-pigmentnyx-pja/eucerin-anti-pigment-krem-nochnoy-protiv-pigmentacii-fl-50ml-83506.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/43.png" layout="responsive" width="400" height="886"></amp-img>
+                      </a>
+                  </div>
+                  <div style="width:100%">
+                      <a href="https://www.pharmacosmetica.ru/eshop/blistex-krem-dlya-gub-smyagchayuschiy-6-ml_id_281068.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/36.png" layout="responsive" width="400" height="886"></amp-img>
+                      </a>
+                  </div>
+                  <div style="width:100%">
+                      <a href="https://www.pharmacosmetica.ru/eshop/mezo-maska-razglazhivayuschaya-maska-50-ml_id_2164.html" target="_blank">
+                          <amp-img src="https://email-images.mindbox.ru/639123/4339378/19.png" layout="responsive" width="400" height="886"></amp-img>
+                      </a>
+                  </div>
+              </div>
+              <!--баннер-конец-->
+
+              <!--баннер-->
+              <div class="bnr-block">
+                  <a href="https://www.pharmacosmetica.ru/" target="_blank">
+                      <amp-img class="bnr" src="https://email-images.mindbox.ru/639123/4339378/18.png" layout="responsive" width="1200" height="156" style="max-width: 600px; width: 100%;"></amp-img>
+                  </a>
+              </div>
+              <!--баннер-->
+              <!--баннер-->
+              <div class="bnr-block">
+                  <a href="https://www.pharmacosmetica.ru/" target="_blank">
+                      <amp-img class="bnr" src="https://email-images.mindbox.ru/639123/4339378/49.png" layout="responsive" width="1198" height="371" style="max-width: 600px; width: 100%;"></amp-img>
+                  </a>
+              </div>
+              <!--баннер-->
+              <!--баннер-->
+              <div class="bnr-block" style="padding-bottom: 17px;">
+                  <a href="https://www.pharmacosmetica.ru/information/dlya-doma/osennyaya-uborka-navodim-chistotu-i-rashlamlyaemsya-s-legkostyu.html" target="_blank">
+                      <amp-img class="bnr" src="https://email-images.mindbox.ru/639123/4339378/51.png" layout="responsive" width="1200" height="570" style="max-width: 600px; width: 100%;"></amp-img>
+                  </a>
+              </div>
+              <!--баннер-->
+
+              <!--Под блок со скриптом-->
+      <!-- Instagram-->
+      <div class="insta-block">
+        <div class="insta-logo">
+          <a href="https://www.instagram.com/pharmacosmetica/" target="_blank"><amp-img src="https://email-images.mindbox.ru/639123/4339378/46.png" layout="responsive" width="135" height="32" style="max-width: 135px; width: 100%;"></amp-img></a>
+        </div>
+        <div class="insta-photos">
+          <a href="https://www.instagram.com/pharmacosmetica/" target="_blank"><amp-img src="https://email-images.mindbox.ru/639123/4339378/27.png" layout="responsive" width="534" height="168" style="max-width: 534px; width: 100%;"></amp-img></a>
+        </div>
+        <div class="social">
+          <div class="icon">
+            <a href="https://www.facebook.com/centrzdorovyakozhi/" target="_blank">
+              <amp-img src="https://email-images.mindbox.ru/639123/4339378/32.png" layout="responsive" width="32" height="32" style="max-width: 32px; width: 100%;"></amp-img>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://www.instagram.com/pharmacosmetica/" target="_blank">
+              <amp-img src="https://email-images.mindbox.ru/639123/4339378/24.png" layout="responsive" width="32" height="32" style="max-width: 32px; width: 100%;"></amp-img>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://vk.com/pharmacosmetica" target="_blank">
+              <amp-img src="https://email-images.mindbox.ru/639123/4339378/28.png" layout="responsive" width="32" height="32" style="max-width: 32px; width: 100%;"></amp-img>
+            </a>
+          </div>
+          <div class="icon">
+            <a href="https://t.me/pharmacosmetica_ru" target="_blank">
+              <amp-img src="https://email-images.mindbox.ru/639123/4339378/17.png" layout="responsive" width="32" height="32" style="max-width: 32px; width: 100%;"></amp-img>
+            </a>
+          </div>
+        </div>
+        <div class="button-block">
+          <a href="https://www.instagram.com/pharmacosmetica/" class="subscribe-button" target="_blank">Подписаться</a>
+        </div>
+      </div>
+<!-- /Instagram-->
+      <!-- Advantages -->
+      <div class="advantages">
+        <div class="advantages-block-title">
+          <p class="advantages-text">Приятных покупок, Ваша pharmacosmetica!</p>
+        </div>
+        <div class="advantages-list">
+          <div class="advantages-list-item">
+            <div class="icon" style="padding-top: 5px;">
+              <a href="https://www.pharmacosmetica.ru/courier/" target="_blank">
+                <amp-img src="https://email-images.mindbox.ru/639123/4339378/16.png" layout="responsive" width="63" height="50" style="max-width: 50px; width: 100%;"></amp-img>
+              </a>
+            </div>
+            <div class="advantage-text" style="padding-top: 5px; white-space: nowrap; text-align: center;">
+              <p style="text-align: center;">Быстрая доставка<br/>
+                по всей России</p>
+            </div>
+          </div>
+          <div class="advantages-list-item">
+            <div class="icon">
+              <a href="https://www.pharmacosmetica.ru/podarki-dlya-vas/" target="_blank">
+                <amp-img src="https://email-images.mindbox.ru/639123/4339378/53.png" layout="responsive" width="50" height="50" style="max-width: 50px; width: 100%;"></amp-img>
+              </a>
+            </div>
+            <div class="advantage-text">
+              <p>Подарки <br/>
+                к заказу</p>
+            </div>
+          </div>
+          <div class="advantages-list-item">
+            <div class="icon">
+              <a href="https://www.pharmacosmetica.ru/eshop/plus-podarok/podarki-dlya-sebya/" target="_blank">
+                <amp-img src="https://email-images.mindbox.ru/639123/4339378/45.png" layout="responsive" width="50" height="50" style="max-width: 50px; width: 100%;"></amp-img>
+              </a>
+            </div>
+            <div class="advantage-text">
+              <p>Выгодные<br/>
+                предложения</p>
+            </div>
+          </div>
+          <div class="advantages-list-item">
+            <div class="icon">
+              <a href="https://www.pharmacosmetica.ru/consultation/" target="_blank">
+                <amp-img src="https://email-images.mindbox.ru/639123/4339378/38.png" layout="responsive" width="50" height="50" style="max-width: 50px; width: 100%;"></amp-img>
+              </a>
+            </div>
+            <div class="advantage-text">
+              <p>Консультация<br/>
+                эксперта</p>
+            </div>
+          </div>
+        </div>
+        <div class="pharma_link-block">
+          <a href="https://www.pharmacosmetica.ru/" class="pharma_link" target="_blank"><i>www.pharmacosmetica.ru</i></a>
+        </div>
+      </div>
+      <!-- /Advantages -->
+      <!-- Application -->
+      <hr style="height: 5px; padding-bottom: 0; margin-bottom: 0; margin-top: 15px;">
+      <hr style="margin: 0px; padding: 0px;">
+      <div class="app-bnr">
+        <div class="app-bnr_wrapp">
+          <div class="app-bnr_text">
+            <p class="bnr_text">ЗАГРУЖАЙТЕ <br/>
+              НАШЕ ПРИЛОЖЕНИЕ!</p>
+          </div>
+          <div class="app-bnr_icons">
+            <div class="app-bnr_icon">
+              <a href="https://play.google.com/store/apps/details?id=com.mirlk.socolor.pharma&referrer=utm_source%3DCZK%26utm_medium%3DSite" target="_blank">
+                <amp-img src="https://email-images.mindbox.ru/639123/4339378/31.png" layout="responsive" width="100" height="30" style="max-width: 100px; width: 100%;"></amp-img>
+              </a>
+            </div>
+            <div class="app-bnr_icon">
+              <a href="https://apps.apple.com/ru/app/id1108358047" target="_blank">
+                <amp-img src="https://email-images.mindbox.ru/639123/4339378/50.png" layout="responsive" width="100" height="30" style="max-width: 100px; width: 100%;"></amp-img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr style="height: 5px; padding-bottom: 0; margin-bottom: 0;">
+      <hr style="margin-top: 0px; padding-top: 0px; padding-bottom: 0; margin-bottom: 0;">
+      <!-- /Application -->
+      <!-- Footer -->
+      <div class="footer">
+                  
+        <p class="footer-text footer-text1">
+          Данное письмо не является офертой. Цена товара упомянутого в письме,
+                          актуальна на момент отправки письма.
+        </p>
+        <p class="footer-text footer-text2" >
+Вы получили это письмо, так как Вы подписаны на рассылки от интернет-магазина <a href="https://www.pharmacosmetica.ru/" target="_blank">pharmacosmetica.ru.</a>
+Добавьте <a href="mailto:mail@pharmacosmetica.ru" target="_blank">mail@pharmacosmetica.ru</a> в свою адресную книгу, чтобы всегда быть в курсе наших новостей
+                                  и специальных акций.
+        </p>
+        <p class="footer-text footer-text3">
+                      Чтобы отписаться от рассылки, нажмите <a href="https://www.pharmacosmetica.ru/?utm_campaign=unsubscribe_popup&utm_source=mindbox&utm_medium=email" target="_blank" style="text-decoration: underline; color: #989898;">здесь</a>.<br/>
+                              © <a href="https://www.pharmacosmetica.ru/" target="_blank">pharmacosmetica.ru</a> 2021     
+        </p>
+      </div>
+<!-- /Footer -->
+    </div>
+  </div>
+</body>
+</html>
